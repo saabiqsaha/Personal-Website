@@ -194,8 +194,8 @@ fieldset {
 }
 
 .project-image {
-    width: 80px;  /* Reduced from 100px for better mobile display */
-    height: 80px; /* Reduced from 100px for better mobile display */
+    width: 60px;  /* Reduced size for mobile */
+    height: 60px; /* Reduced size for mobile */
     object-fit: cover;
     border-radius: 10px;
     margin-right: 20px;
