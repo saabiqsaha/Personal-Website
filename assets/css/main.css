@@ -194,8 +194,8 @@ fieldset {
 }
 
 .project-image {
-    width: 100px; /* Reduced from 150px for mobile */
-    height: 100px; /* Reduced from 150px for mobile */
+    width: 80px;  /* Reduced from 100px for better mobile display */
+    height: 80px; /* Reduced from 100px for better mobile display */
     object-fit: cover;
     border-radius: 10px;
     margin-right: 20px;
@@ -301,7 +301,7 @@ fieldset {
     }
 
     .project-image {
-        width: 150px; /* Original size for desktop */
+        width: 150px;  /* Original size for desktop */
         height: 150px; /* Original size for desktop */
     }
 }
