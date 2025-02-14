@@ -248,7 +248,7 @@ fieldset {
 
 .award-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: #f9f9f9;
     padding: 20px;
@@ -257,15 +257,17 @@ fieldset {
 }
 
 .award-image {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     object-fit: cover;
     border-radius: 10px;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .award-details {
-    flex: 1;
+    text-align: center;
+    width: 100%;
 }
 
 .award-details h3 {
@@ -277,6 +279,26 @@ fieldset {
 .award-details p {
     font-size: 1rem;
     color: #555;
+}
+
+/* Responsive design for larger screens */
+@media only screen and (min-width: 768px) {
+    .award-item {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+    }
+
+    .award-image {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+
+    .award-details {
+        text-align: left;
+    }
 }
 
 legend {
@@ -346,28 +368,6 @@ template {
         transform: rotate(359deg)
     }
 }
-
-@keyframes fa-spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg)
-    }
-
-    to {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg)
-    }
-}
-
-@-webkit-keyframes pulse {
-
-    0%,
-    to {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        filter: alpha(opacity=40);
-        opacity: .4;
-        top: 0
-    }
 
     50% {
         -ms-filter: none;
