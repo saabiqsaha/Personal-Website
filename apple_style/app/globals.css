@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 29, 29, 31; /* Apple dark color */
+  --background-rgb: 251, 251, 253; /* Apple light color */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .apple-button {
+    @apply bg-apple-blue text-white font-medium py-2 px-6 rounded-full hover:opacity-90 transition-all duration-300;
+  }
+  
+  .apple-nav-link {
+    @apply text-apple-dark hover:text-apple-blue transition-colors duration-300;
+  }
+  
+  .apple-section {
+    @apply py-16 md:py-24 px-6 max-w-7xl mx-auto;
+  }
+  
+  .apple-heading {
+    @apply text-4xl md:text-5xl font-semibold tracking-tight;
+  }
+  
+  .apple-subheading {
+    @apply text-xl md:text-2xl font-medium text-gray-500 mt-4;
+  }
+} 
