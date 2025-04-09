@@ -1,11 +1,5 @@
 /// <reference types="next" />
-/// <reference types="react" />
-/// <reference types="react-dom" />
+/// <reference types="next/image-types/global" />
 
-declare namespace React {
-  interface JSX {
-    // Allow any element
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    [elem: string]: any;
-  }
-} 
+// NOTE: This file should not be edited
+// see https://nextjs.org/docs/app/building-your-application/configuring/typescript for more information.
