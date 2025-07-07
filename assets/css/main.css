@@ -366,20 +366,9 @@ template {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
-    }
-
-    to {
+    }    to {
         -webkit-transform: rotate(359deg);
         transform: rotate(359deg)
-    }
-}
-
-    50% {
-        -ms-filter: none;
-        -webkit-filter: none;
-        filter: none;
-        opacity: 1;
-        top: -10px
     }
 }
 
