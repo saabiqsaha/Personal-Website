@@ -258,7 +258,7 @@ fieldset {
 
 .award-image {
     width: 100%;
-    max-width: 500px; /* Increased from 300px */
+    max-width: 600px; /* Increased from 500px */
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -287,11 +287,9 @@ fieldset {
         flex-direction: row;
         align-items: center;
         text-align: left;
-    }
-
-    .award-image {
-        width: 300px; /* Smaller on desktop for better layout */
-        height: 300px;
+    }    .award-image {
+        width: 400px; /* Increased from 300px */
+        height: 400px; /* Increased from 300px */
         margin-bottom: 0;
         margin-right: 20px;
     }
